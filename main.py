@@ -14,7 +14,7 @@ def channelsearch(channel):
   querystring = {"keyword":channel,"sortBy":"relevance"}
 
   headers = {
-    "X-RapidAPI-Key": "f6655060bfmsh3e3d5bd7af39d01p14b314jsnfa51b3d0c068",
+    "X-RapidAPI-Key": "68a49ac1a2msh3a7b4896a584357p137023jsn9db99d40833e",
     "X-RapidAPI-Host": "youtube-media-downloader.p.rapidapi.com"
   }
 
@@ -29,7 +29,7 @@ def getlist(hliwa):
   url = "https://youtube-media-downloader.p.rapidapi.com/v2/search/videos"
   querystring = {"keyword":hliwa}
   headers = {
-    "X-RapidAPI-Key": "f6655060bfmsh3e3d5bd7af39d01p14b314jsnfa51b3d0c068",
+    "X-RapidAPI-Key": "68a49ac1a2msh3a7b4896a584357p137023jsn9db99d40833e",
     "X-RapidAPI-Host": "youtube-media-downloader.p.rapidapi.com"
   }
   response = requests.request("GET", url, headers=headers, params=querystring)
