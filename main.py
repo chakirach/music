@@ -43,7 +43,7 @@ def trendsuser(country):
   querystring = {"country":country,"type":"music"}
 
   headers = {
-    "X-RapidAPI-Key": "68a49ac1a2msh3a7b4896a584357p137023jsn9db99d40833e",
+    "X-RapidAPI-Key": "f6655060bfmsh3e3d5bd7af39d01p14b314jsnfa51b3d0c068",
     "X-RapidAPI-Host": "youtube-trending.p.rapidapi.com"
   }
 
