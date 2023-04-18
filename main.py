@@ -3,6 +3,7 @@ from typing import Union
 from fastapi import FastAPI
 import requests
 import json
+import time
 from fastapi.responses import RedirectResponse, HTMLResponse
 import random
 
@@ -71,6 +72,7 @@ def getchaininformations(id):
 
   response = requests.request("GET", url, headers=headers, params=querystring)
   print(response.text)
+  time.sleep(5.5)
   jess_dict2 = json.loads(response.text)
   if jess_dict2['status']==True:
       return jess_dict2
