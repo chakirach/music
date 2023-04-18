@@ -103,6 +103,7 @@ def getvideosfromuser(id):
   }
   response = requests.request("GET", url, headers=headers, params=querystring)
   jess_dict2 = json.loads(response.text)
+  print(jess_dict2)
   if jess_dict2['status']==True:
       return jess_dict2
   return "false"
